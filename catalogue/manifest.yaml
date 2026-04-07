@@ -34,7 +34,7 @@ spec:
     tier: backend 
     component: catalogue 
   spec:
-   conatiners:
+   containers:
     - name: catalogue 
       image: sivamedam/catalogue:1.0.0
       envFrom:
