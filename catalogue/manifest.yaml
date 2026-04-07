@@ -34,11 +34,12 @@ spec:
     tier: backend 
     component: catalogue 
   spec:
-   - name: catalogue 
-     image: sivamedam/catalogue:1.0.0
-     envFrom:
-      - configMapRef:
-         name: catalogue
+   conatiners:
+    - name: catalogue 
+      image: sivamedam/catalogue:1.0.0
+      envFrom:
+       - configMapRef:
+          name: catalogue
 ---
 apiVersion: v1
 kind: Service
