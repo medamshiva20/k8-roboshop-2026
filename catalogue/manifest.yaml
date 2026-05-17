@@ -36,7 +36,8 @@ spec:
   spec:
    containers:
     - name: catalogue 
-      image: sivamedam/catalogue:1.0.0
+      image: sivamedam/catalogue:1.4.0
+      imagePullPolicy: Always
       resources:
        requests:
         cpu: "100m"
