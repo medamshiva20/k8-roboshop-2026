@@ -9,7 +9,7 @@ metadata:
   component: shipping
 data:
  CART_ENDPOINT: "cart:8080"
- DB_HOST: "mysql"
+ DB_HOST: "Mysql"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -39,11 +39,11 @@ spec:
       image: sivamedam/shipping:1.4.0
       resources:
        requests:
-        cpu: "100m"
-        memory: "64Mi"
+        cpu: "200m"
+        memory: "256Mi"
        limits:
         cpu: "200m"
-        memory: "64Mi"
+        memory: "256Mi"
       readinessProbe:
        tcpSocket: 
         port: 8080
