@@ -97,7 +97,7 @@ spec:
   spec:
    volumes:
     - name: nginx-config
-      congigMap:
+      configMap:
        name: frontend
    containers:
     - name: nginx
